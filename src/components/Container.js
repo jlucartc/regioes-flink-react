@@ -45,14 +45,6 @@ export default class Container extends React.Component {
     return(
       <div className="container-fluid h-100">
         <div className="row h-100">
-          {/*<SideMenu
-            addRegiao={this.addRegiao}
-            addRaio={this.addRaio}
-            fazConsulta={this.fazConsulta}
-            salvarOperacao={this.salvarDados}
-            resetarOperacao={this.resetarOperacao}
-            cancelarOperacao={this.cancelarOperacao}
-          />*/}
           <div className="col-3 h-100" style={{backgroundColor:"#dddddd"}}>
             <div className="container-fluid">
               <div className="row">

@@ -37,10 +37,4 @@ export default class MainPanel extends React.Component{
     )
   }
 
-  mapClickBehaviour(event){
-
-      this.props.clickBehaviour(event)
-
-  }
-
 }

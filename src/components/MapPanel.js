@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Map, Marker, Popup, TileLayer, Polygon } from 'react-leaflet';
+import {CRS} from 'leaflet';
 
 export default class MainPanel extends React.Component{
 
@@ -17,8 +18,8 @@ export default class MainPanel extends React.Component{
     return(
       <div className="col-9 h-100" style={{backgroundColor:"#bbbbbb"}}>
           <Map
-            center={[0,0]}
-            zoom={13}
+            center={[-3.746474, -38.577769]}
+            zoom={14}
             className="h-100"
             onclick={this.props.clickBehaviour}
           >
@@ -26,8 +27,7 @@ export default class MainPanel extends React.Component{
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url='https://{s}.tile.osm.org/{z}/{x}/{y}.png'
             />
-            {!this.props.regioes ? null : this.props.regioes}
-            {!this.props.raios ? null : this.props.raios}
+            {!this.props.areas ? null : this.props.areas}
             {!this.props.novoRaio ? null : this.props.novoRaio}
             {!this.props.novaRegiao ? null : this.props.novaRegiao}
             <Polygon positions={[[0,0],[1,0],[1,1],[0,1]]}>
